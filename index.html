@@ -18,7 +18,7 @@
     gtag('config', 'G-ZF1S2R8HRN');
   </script>
  </head>
-  
+ 
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Segoe UI", sans-serif; }
   body {
@@ -168,6 +168,31 @@
     cursor: pointer;
     font-size: 1rem;
   }
+ /* Default Light Mode */
+body {
+  background-color: #FAFAFA;
+  color: #212121;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+body.dark-mode .card {
+  background-color: #1E1E1E;
+}
+
+body.dark-mode a {
+  color: #29B6F6; /* Links in dark mode */
+   }
   .ceo-page button:hover { background: #1557b0; }
 
   @keyframes fadeIn {
