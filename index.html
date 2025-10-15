@@ -272,15 +272,6 @@ body.dark-mode a {
 </style>
 </head>
 <body>
- <!-- Toggle Button -->
-<button id="themeToggle">🌙 / ☀️</button>
-
-<script>
-const toggleBtn = document.getElementById('themeToggle');
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-});
-</script>
 
 <style>
 body {
@@ -325,7 +316,7 @@ body.dark-mode {
   <div class="search-box">
    <input type="text" id="searchBox" placeholder="Enter word">
 <button onclick="wordSearched(document.getElementById('searchBox').value)">Search</button>
-    <input type="text" id="search" placeholder="Search English words..." autocomplete="off">
+    
    
 <div class="gcse-search"></div>
     <ul id="suggestions"></ul>
