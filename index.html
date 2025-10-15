@@ -17,6 +17,21 @@
 
     gtag('config', 'G-ZF1S2R8HRN');
   </script>
+  <script>
+function trackEvent(name, params) {
+  gtag('event', name, params);
+}
+
+// Example: quiz answer clicked
+function quizAnswerClicked(answer) {
+  trackEvent('quiz_answer', { answer: answer });
+}
+
+// Example: word searched
+function wordSearched(word) {
+  trackEvent('search_word', { word: word });
+}
+  </script>
  </head>
  
 <style>
