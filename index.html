@@ -272,6 +272,36 @@ body.dark-mode a {
 </style>
 </head>
 <body>
+ <!-- Toggle Button -->
+<button id="themeToggle">🌙 / ☀️</button>
+
+<script>
+const toggleBtn = document.getElementById('themeToggle');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+</script>
+
+<style>
+body {
+  background-color: #f0f0f0;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+</style>
 <!-- Sublan Loading Screen -->
 <div id="loading-screen">
   <div class="loader">
